@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>My Portfolio</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" sizes="16x16" href="image/favicon_heart.ico">
+	
+	<!-- google fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lato:wght@300&family=Open+Sans:wght@300&family=Playfair+Display&family=Yellowtail&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+	<!-- fontawesome -->
+	<script src="https://kit.fontawesome.com/6e4540c13e.js" crossorigin="anonymous"></script>
+	<!-- AOS library -->
+	<link rel="stylesheet" href="css/aos.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<!-- jquery -->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<link rel="stylesheet" href="dist/loading-bar.css">
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<!-- file css -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+		<script src="js/helpers.js"></script>
+	<section class="snow-bg">
+    </section>
+	<div class="intro">
+		<div class="main">
+			<div class="mode">
+				<div class="dark" onclick="toDark()">
+					<i class="far fa-lightbulb"></i>
+				</div>
+				<div class="light" onclick="toLight()">
+					<i class="far fa-lightbulb"></i>
+				</div>
+				<!-- <button onclick="toggleDarkMode()">Dark Mode</button> -->
+			</div>
+			<div class="animation-bg">
+				<div class="snow">
+					<i class="fas fa-snowflake"></i>
+				</div>
+				<div class="sakura-flower">
+					<i class="fas fa-leaf"></i>
+				</div>
+				<div class="no-animation">
+					<i class="fas fa-circle-notch"></i>
+				</div>
+			</div>
+			<div class="include">
+				<div class="intro-left">
+					<div class="navbar">
+						<ul>
+							<a href="#">
+								<li>Home</li>
+								<div class="border-bottom"></div>
+							</a>
+							<a href="#">
+								<li>About</li>
+								<div class="border-bottom"></div>
+							</a>
+							<a href="#">
+								<li>Product</li>
+								<div class="border-bottom"></div>
+							</a>
+							<a href="#">
+								<li>Contact</li>
+								<div class="border-bottom"></div>
+							</a>
+						</ul>
+					</div>
+					<div class="info">
+						<div class="overlay"></div>
+						<div class="info-title">
+							<h3><span>C</span>ông <span>Đ</span>ạt</h3>
+							<div class="line-left"></div>
+							<h5>Web Developer</h5>
+							<div class="line-right"></div>	
+						</div>
+						<div class="info-content">
+							<div class="content">
+								<p>I’m studying information technology and I do enjoy it, most aspects of it. But in this final year there is a lot of hard work and a lot of reading, and I cannot say that I enjoy all of this reading. But what I really enjoy is working on case studies. What I mean is discussing cases. I like to exchange ideas with people.</p>
+							</div>
+							<div class="btn">
+								<div class="btn-get-cv">
+									<a rel="nofollow" href="https://drive.google.com/file/d/11scWv5NJNC5hUizXeefiGKEM4fsVRRDG/view?usp=sharing"><h5>Get CV</h5></a>
+								</div>
+								<!-- <div class="btn-show-product">
+									<i class="fas fa-chevron-circle-right"></i>
+									<a href="#"><h5>View Product</h5></a>
+								</div> -->
+							</div>
+						</div>
+					</div>
+					<div class="social">
+						<a href="#"><i class="fab fa-facebook-square"></i></a>
+						<a href="#"><i class="fab fa-instagram"></i></a>
+						<a href="#"><i class="fab fa-twitter"></i></a>
+						<a href="#"><i class="fab fa-youtube"></i></a>
+					</div>
+				</div>
+				<div class="avatar">
+						
+				</div>
+				<div class="intro-right">
+					<div class="background">
+						<div class="sign">
+							<h3 data-aos="zoom-in" data-aos-delay="200">
+								<span class="C fast-flicker">C</span>
+								<span class="O">o</span>
+								<span class="N">n</span>
+								<span class="G">g</span>
+								<span class="D flicker">D</span>
+								<span class="A">a</span>
+								<span class="T">t</span>
+					        </h3>
+						</div>
+						<a href="#"><i class="fas fa-forward" onclick="myFunctionTouch()"></i></a>
+					</div>
+				</div>
+			</div>	
+			<div class="ct-all">
+				<div id="category">
+					<i class="fas fa-align-justify"></i>
+				</div>
+				<div class="media">
+					<!-- <div id="calendar"></div> -->
+					<div class="calendar disable-selection" id="calendar">
+					    <div class="left-side">
+					        <div class="current-day text-center">
+					            <h1 class="calendar-left-side-day"></h1>
+					            <div class="calendar-left-side-day-of-week"></div>
+					        </div>
+					        <div class="current-day-events">
+					            <div>Current Events:</div>
+					            <ul class="current-day-events-list"></ul>
+					        </div>
+					        <div class="add-event-day">
+					            <input type="text" class="add-event-day-field" placeholder="Create an Event">
+					            <span class="fa fa-plus-circle cursor-pointer add-event-day-field-btn"></span>
+					        </div>
+					        <div class="remove-event-day" onclick="removeEvent()">
+					        	<i class="far fa-trash-alt"></i>
+					        </div>
+					    </div>
+					    <div class="right-side">
+					        <div class="text-right calendar-change-year">
+					            <div class="calendar-change-year-slider">
+					                <span class="fa fa-caret-left cursor-pointer calendar-change-year-slider-prev"></span>
+					                <span class="calendar-current-year"></span>
+					                <span class="fa fa-caret-right cursor-pointer calendar-change-year-slider-next"></span>
+					            </div>
+					        </div>
+					        <div class="calendar-month-list">
+					            <ul class="calendar-month"></ul>
+					        </div>
+					        <div class="calendar-week-list">
+					            <ul class="calendar-week"></ul>
+					        </div>
+					        <div class="calendar-day-list">
+					            <ul class="calendar-days"></ul>
+					        </div>
+					    </div>
+					</div>
+				</div>
+				<div class="ct-title">
+					<h4>Resume</h4>
+				</div>
+				<div class="title-summary">	
+					<div class="line-time">
+						<div class="menu" data-aos="zoom-in" data-aos-delay="20000">
+							<h4>Menu</h4>
+						</div>
+						<a href="#">
+							<div class="tag-about_me tag_about" data-aos="fade-right" data-aos-delay="200">
+								<div class="key"></div>
+						        <h4 class="about_me" onclick="myFunctionAbout()" >About Me</h4>
+							</div>
+						</a>
+						<div class="timeline"></div>
+						<a href="#">
+							<div class="tag-experience tag_experience"  data-aos="fade-left" data-aos-delay="200">
+								<h4 class="exp" onclick="myFunctionExp()">Experience</h4>
+								<div class="key">
+						        </div>
+						    </div>	
+						</a>
+						<a href="#">	
+							<div class="tag-skills tag_skills"  data-aos="fade-right" data-aos-delay="200">
+								<div class="key">
+						        </div>
+						        <h4 class="skills" onclick="myFunctionSkill()">Skills</h4>
+							</div>		
+						</a>													
+						<a href="#">
+							<div class="tag-education tag_education"  data-aos="fade-left" data-aos-delay="200">
+								<h4 class="edu" onclick="myFunctionEdu()">Education</h4>
+								<div class="key">
+						        </div>
+						    </div>	
+						</a>
+						<a href="#">
+							<div class="tag-project tag_project"  data-aos="fade-left" data-aos-delay="200">
+								<h4 class="project" onclick="myFunctionProject()">Project</h4>
+								<div class="key">
+						        </div>
+							</div>
+						</a>
+				    </div>
+				</div>
+				<div class="parallax">
+					<div class="introduce">
+						<div class="content-introduce">
+							<h3>Welcome</h3>
+							<h4>Have a nice day!!!</h4>
+						</div>
+						<!-- <p data-aos="fade-right" data-aos-delay="200">
+							<span>Welcome</span>
+						</p> -->
+					</div>
+					<div class="para-about_me">
+					    <div class="content-para-about_me">
+				    		<h3>MySelf</h3>
+				    		<p class="intro">I'm a web developer. I can design websites, I have strong technical skills as well as excellent interpersonal skills, enabling me to interact with a wide range of clients. I am eager to be challenged in order to grow and further improve my IT skills. My greatest passion is in life is using my technical know-how to benefit other people and organisations.</p>
+				    		<div class="contact">
+				    			<div class="line-contact">
+				    				<div class="line"></div>
+				    			</div>
+				    			<div class="content-contact">
+				    				<div class="name">
+				    					<h4>Name:</h4>
+					    			    <p>Huỳnh Công Đạt</p>
+				    				</div>
+				    				<div class="date">
+				    					<h4>Date Of Birth:</h4>
+					    			    <p>15/05/1999</p>
+				    				</div>
+					    			<div class="address">
+					    				<h4>Address:</h4>
+					    			    <p>National university domitory, Linh Trung Ward, Thu Duc District, Ho Chi Minh, Viet Nam.</p>
+					    			</div>
+					    			<div class="phone">
+					    				<h4>Phone:</h4>
+					    			    <p>0327151365</p>
+					    			</div>
+					    			<div class="email">
+					    				<h4>Email:</h4>
+					    			    <p>Huynhcongdat1999@gmail.com</p>
+					    			</div>
+					    			<div class="link">
+					    				<h4>Github:</h4>
+					    				<p>https://github.com/thuytien1505</p>
+					    			</div>
+					    		</div>
+				    		</div>
+					    </div>								
+					</div>
+					<div class="para-experience">
+						<div class="content-para-experience">
+							<div class="header">
+					    		<i class="fas fa-briefcase"></i>
+					    		<h4>
+					    			<span>E</span>
+					    			<span>X</span>
+					    			<span>P</span>
+					    			<span>E</span>
+					    			<span>R</span>
+					    			<span>I</span>
+					    			<span>E</span>
+					    			<span>N</span>
+					    			<span>C</span>
+					    			<span>E</span>
+					    		</h4>
+					    	</div>
+					    	<!-- <div class="line-edu">
+					    	</div> -->
+					    	<div class="content-edu">
+					    		<div class="timeline">
+					    			<div class="line"></div>
+					    			<div class="time1">2017-8</div>
+					    			<div class="icon1"><i class="fas fa-circle"></i></div>
+					    			<div class="time2">2019-6</div>
+					    			<div class="icon2"><i class="fas fa-circle"></i></div>
+					    			<div class="time3">2020-4</div>
+					    			<div class="icon3"><i class="fas fa-circle"></i></div>
+					    		</div>
+					    		<div class="detail">
+					    			<div class="uni">
+					    				<ul>
+					    					<li class="title1">
+					    						<p>Start learning at UIT</p>
+					    					</li>
+					    					<li class="title2">
+					    						<p>Participated in a number of specialized project at the University</p>
+					    						<ul class="detail-pro-book">
+					    							<li>Name: Website for selling books online</li>
+					    							<li>Duration: Two month</li>
+					    							<li>Responsibilities: Front-end and Back-end</li>
+					    							<li>Use Technologies: HTML, CSS, JAVASCRIPT and PHP</li>
+					    							<li>With Framwork: Laravel</li>
+					    						</ul>
+					    					</li>
+					    					<li class="title3">
+					    						<p>Participated in personal project with my friend</p>
+					    						<ul class="detail-pro-blog">
+					    							<li>Name: Personal Blog</li>
+					    							<li>Duration: One month</li>
+					    							<li>Responsibilities: Front-end and Back-end</li>
+					    							<li>Use Technologies: HTML, CSS, JAVASCRIPT and PHP</li>
+					    							<li>With Framwork: Laravel</li>
+					    						</ul>
+					    					</li>
+					    				</ul>
+					    			</div>
+					    		</div>
+					    	</div>
+						</div>
+					</div>
+					<div class="para-skills">	
+					    <div class="content-para-skills">
+					    	<h3>My Skills</h3>
+					    	<div class="html">
+					    		<h4>HTML</h4>
+					    		<div id="container">
+					    			<div class="skills html-skill" percent_skill>90%</div>
+					    		</div>
+					    	</div>
+					    	
+					    	<div class="css">
+					    		<h4>CSS</h4>
+					    		<div id="container">
+					    			<div class="skills css-skill" data-percent="85%">85%</div>
+					    		</div>
+					    	</div>
+					    	
+					    	<div class="js">
+					    		<h4>JAVASCRIPT</h4>
+					    		<div id="container">
+					    			<div class="skills js-skill" data-percent="50%">50%</div>
+					    		</div>
+					    	</div>
+					    	
+					    	<div class="sql">
+					    		<h4>MYSQL</h4>
+					    		<div id="container">
+					    			<div class="skills sql-skill" data-percent="75%">75%</div>
+					    		</div>
+					    	</div>
+					    	
+					    	<div class="php">
+					    		<h4>PHP</h4>
+					    		<div id="container">
+					    			<div class="skills php-skill" data-percent="70%">70%</div>
+					    		</div>
+					    	</div>
+					    </div>						
+					</div>
+					<div class="para-education">	
+					    <div class="content-para-education">
+					    	<div class="header">
+					    		<i class="fas fa-graduation-cap"></i>
+					    		<h4>EDUCATION</h4>
+					    	</div>
+					    	<div class="line-edu">
+					    	</div>
+					    	<div class="content-edu">
+					    		<div class="timeline">
+					    			<div class="line"></div>
+					    			<!-- <div class="icon"><i class="fas fa-school"></i></div> -->
+					    		</div>
+					    		<div class="detail">
+					    			<div class="uni">
+					    				<ul>
+					    					<li class="title"><p>University Of Information Technology</p></li>
+					    					<li><p>3nd year student of Information Technology University</p></li>
+					    					<li><p>Favorite subjects: Web application development, Database …</p></li>
+					    					<li><p>GPA accumulates 5 semesters: 7.69/10</p></li>
+					    					<li><p>Achievements: Receive 1 semesters scholarship</p></li>
+					    				</ul>
+						    			<div class="time">
+						    				<p>Time: <i class="fas fa-calendar-times"></i>2017-08 - 2021-08</p>
+						    			</div>
+					    			</div>
+					    		</div>
+					    	</div>
+					    </div>						
+					</div>
+					<div class="para-project">
+						<div class="content-para-project">
+							<div class="bar">
+								<div class="all" onclick="myFunctionAll()">ALL</div>
+								<div class="line-confirm-all"></div>
+								<div class="cover" onclick="myFunctionCover()">COVER</div>
+								<div class="line-confirm-cover"></div>
+								<div class="singer" onclick="myFunctionSinger()">SINGER</div>
+								<div class="line-confirm-singer"></div>
+							</div>
+							<div class="product">
+								<div class="all-pro">
+									<div class="pro">
+										<img src="image/flight.png" alt="">
+										<div class="tranparence"></div>
+									</div>
+									<div class="pro">
+										<img src="image/flight.png" alt="">
+										<div class="tranparence"></div>
+									</div>
+									<div class="pro">
+										<img src="image/flight.png" alt="">
+										<div class="tranparence"></div>
+									</div>
+									<div class="pro">
+										<img src="image/flight.png" alt="">
+										<div class="tranparence"></div>
+									</div>
+									<div class="pro">
+										<img src="image/flight.png" alt="">
+										<div class="tranparence"></div>
+									</div>
+									<div class="pro">
+										<img src="image/flight.png" alt="">
+										<div class="tranparence"></div>
+									</div>
+								</div>
+								<div class="cover-pro">
+									<div class="pro">
+										<img src="image/flight.png" alt="">
+										<div class="tranparence"></div>
+									</div>
+									<div class="pro">
+										<img src="image/flight.png" alt="">
+										<div class="tranparence"></div>
+									</div>
+									<div class="pro">
+										<img src="image/flight.png" alt="">
+										<div class="tranparence"></div>
+									</div>
+									<div class="pro">
+										<img src="image/flight.png" alt="">
+										<div class="tranparence"></div>
+									</div>
+								</div>
+								<div class="singer-pro">
+									<div class="pro">
+										<img src="image/flight.png" alt="">
+										<div class="tranparence"></div>
+									</div>
+									<div class="pro">
+										<img src="image/flight.png" alt="">
+										<div class="tranparence"></div>
+									</div>
+									<div class="pro">
+										<img src="image/flight.png" alt="">
+										<div class="tranparence"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="back">
+					<a href="#"><i class="fas fa-backward" onclick="myFunctionBack()"></i></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/darkmode.js"></script>
+	<script src="js/bg_animation.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/paralax.js"></script>
+	<!-- bootstrap -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	<script src="dist/loading-bar.min.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		  AOS.init();
+	</script>
+</body>
+</html>
